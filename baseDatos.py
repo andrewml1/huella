@@ -125,6 +125,25 @@ def pruebaHuellaDf(credenciales, df):
         cursor.close()
         conn.close()
 
+
+def datosConsolidados(credenciales):
+
+    conn = psycopg2.connect(
+        database=credenciales["database"],
+        user=credenciales["user"],
+        password=credenciales["password"],
+        host=credenciales["host"],
+        port=credenciales["port"]
+    )
+
+    cursor = conn.cursor()
+
+    cursor.execute("select * from huellacarbono")
+
+    # Fetch the result
+    queryData = cursor.fetchall()
+
+    return queryData
 #
 # cred=credenciales("admin")
 # crearTablasPostgres(cred)

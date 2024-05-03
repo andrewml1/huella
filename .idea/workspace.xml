@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c4f07e-2987-4d0b-bad2-612c5a1f6980" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jupyter-settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/huellaCarbono.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/huellaCarbono.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a9c4f07e-2987-4d0b-bad2-612c5a1f6980" name="Changes" comment="pruebas con un Dataframe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDatos.py" beforeDir="false" afterPath="$PROJECT_DIR$/baseDatos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,12 +98,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714693616060</updated>
-      <workItem from="1714708652213" duration="633000" />
+      <workItem from="1714708652213" duration="963000" />
     </task>
+    <task id="LOCAL-00001" summary="pruebas con un Dataframe">
+      <option name="closed" value="true" />
+      <created>1714709394087</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714709394087</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pruebas con un Dataframe" />
+    <option name="LAST_COMMIT_MESSAGE" value="pruebas con un Dataframe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -126,20 +136,11 @@
           <line>130</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/huella$app.coverage" NAME="app Coverage Results" MODIFIED="1714708969076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/huella$app.coverage" NAME="app Coverage Results" MODIFIED="1714709806328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/huella$baseDatos.coverage" NAME="baseDatos Coverage Results" MODIFIED="1714709231109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

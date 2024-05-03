@@ -1,9 +1,9 @@
 import os
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import psycopg2
 import pandas as pd
-from baseDatos import pruebaHuellaDf, credenciales
+from baseDatos import pruebaHuellaDf, credenciales, datosConsolidados
 import openpyxl
 app = Flask(__name__)
 
@@ -25,10 +25,15 @@ def upload():
         cred = credenciales("admin")
         pruebaHuellaDf(cred,df)
 
-        return 'File uploaded and data inserted successfully!'
+        return 'Los datos se han cargado correctamente'
     else:
         return 'No file uploaded'
 
+@app.route('/datoshuella', methods=['GET'])
+def datosinstitucion():
+    cred = credenciales('admin')
+    paciente_data = datosConsolidados(cred)
+    return jsonify(paciente_data)
 
 if __name__ == '__main__':
     # app.run()
