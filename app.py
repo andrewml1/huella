@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from baseDatos import pruebaHuellaDf, credenciales, datosConsolidados
 import openpyxl
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -15,7 +16,7 @@ def upload():
 
     if file.filename != '':
         # Save the uploaded file temporarily
-        file.save(file.filename)
+        file.save('server'+ file.filename)
 
         # Read data from the Excel file
         df = pd.read_excel(file.filename)
