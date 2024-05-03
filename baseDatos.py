@@ -1,4 +1,5 @@
 import json
+import datetime
 import psycopg2
 
 
@@ -50,6 +51,24 @@ def crearTablasPostgres(credenciales):
     conn.close()
 
 
+def columnaLogs(credenciales):
+    conn = psycopg2.connect(
+        database=credenciales["database"],
+        user=credenciales["user"],
+        password=credenciales["password"],
+        host=credenciales["host"],
+        port=credenciales["port"]
+    )
+
+    cursor = conn.cursor()
+    cursor.execute('''
+            ALTER TABLE huellacarbono
+            ADD logfecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+        END''')
+    conn.commit()  # Don't forget to commit the changes after creating tables
+    conn.close()
+
+
 def pruebaHuella(credenciales,campoid, Valor, Planta, fecha):
 
         conn = psycopg2.connect(
@@ -97,12 +116,13 @@ def pruebaHuellaDf(credenciales, df):
             Valor = row['valor']
             Planta = row['planta']
             fecha = row['fecha']
+            logfecha=datetime.datetime.now()
 
             # Construct the SQL query
             query = f'''
                     INSERT INTO huellacarbono (
-                        campoid, valor, planta, fecha
-                    ) VALUES ('{campoid}', '{Valor}', '{Planta}', '{fecha}')
+                        campoid, valor, planta, fecha,logfecha
+                    ) VALUES ('{campoid}', '{Valor}', '{Planta}', '{fecha}','{logfecha}')
                     '''
 
             # Execute the SQL query
@@ -142,7 +162,7 @@ def datosConsolidados(credenciales):
     return queryData
 #
 # cred=credenciales("admin")
-# crearTablasPostgres(cred)
+# columnaLogs(cred)
 # pruebaHuella(cred,'7ya',77,'Cartagena','2024-05-02')
 
 
