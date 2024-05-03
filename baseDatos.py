@@ -160,8 +160,30 @@ def datosConsolidados(credenciales):
     queryData = cursor.fetchall()
 
     return queryData
-#
+
+def borrar_pruebas(credenciales):
+    # Establecer la conexión
+    conn = psycopg2.connect(
+        database=credenciales["database"],
+        user=credenciales["user"],
+        password=credenciales["password"],
+        host=credenciales["host"],
+        port=credenciales["port"]
+    )
+    cursor = conn.cursor()
+
+    query = "DELETE FROM huellacarbono;"
+    cursor.execute(query)
+
+
+    conn.commit()
+    # Cerrar el cursor y la conexión
+    conn.close()
+
+
+
 # cred=credenciales("admin")
+# borrar_pruebas(cred)
 # columnaLogs(cred)
 # pruebaHuella(cred,'7ya',77,'Cartagena','2024-05-02')
 
