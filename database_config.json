@@ -1,0 +1,9 @@
+{
+    "admin": {
+        "database": "d4kar3e6cnqv4t",
+        "user": "ufijksl2q89jh7",
+        "password": "p6e3a539aa4070a28424fdedb1f9e9b98f8ad272f6d8a92d07139dcc7211f8b00",
+        "host": "cf9gid2f6uallg.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com",
+        "port": "5432"
+    }
+}
