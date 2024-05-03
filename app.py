@@ -1,9 +1,10 @@
+import os
+
 from flask import Flask, render_template, request
 import psycopg2
 import pandas as pd
-
 from baseDatos import pruebaHuellaDf, credenciales
-
+import openpyxl
 app = Flask(__name__)
 
 @app.route('/')
@@ -30,4 +31,5 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # app.run()
+    app.run(host="0.0.0.0", port=os.environ.get("PORT", 5000))

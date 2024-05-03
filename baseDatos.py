@@ -4,9 +4,8 @@ import sqlite3
 from datetime import datetime
 import pandas as pd
 import psycopg2
-import pyodbc
-import pymssql
-import pymssql
+
+
 
 def credenciales(usuario):
     # Specify the filename
@@ -99,8 +98,8 @@ def pruebaHuellaDf(credenciales, df):
         for index, row in df.iterrows():
             # Extract values from the DataFrame
             campoid = row['campoid']
-            Valor = row['Valor']
-            Planta = row['Planta']
+            Valor = row['valor']
+            Planta = row['planta']
             fecha = row['fecha']
 
             # Construct the SQL query
