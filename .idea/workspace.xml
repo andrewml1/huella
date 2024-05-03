@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c4f07e-2987-4d0b-bad2-612c5a1f6980" name="Changes" comment="Datos con la API">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-    </list>
+    <list default="true" id="a9c4f07e-2987-4d0b-bad2-612c5a1f6980" name="Changes" comment="Datos con la API" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +50,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andres Lo\Documents\Python\huella" />
       <recent name="C:\Users\amontoyal\PycharmProjects\huellaCarbono" />
     </key>
   </component>
@@ -96,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714693616060</updated>
-      <workItem from="1714708652213" duration="1271000" />
+      <workItem from="1714708652213" duration="1571000" />
     </task>
     <task id="LOCAL-00001" summary="pruebas con un Dataframe">
       <option name="closed" value="true" />
@@ -114,7 +113,39 @@
       <option name="project" value="LOCAL" />
       <updated>1714709908448</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Datos con la API">
+      <option name="closed" value="true" />
+      <created>1714709941148</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714709941148</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Datos con la API">
+      <option name="closed" value="true" />
+      <created>1714710010651</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714710010651</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Datos con la API">
+      <option name="closed" value="true" />
+      <created>1714710024179</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714710024179</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Datos con la API">
+      <option name="closed" value="true" />
+      <created>1714710096382</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714710096382</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

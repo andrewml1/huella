@@ -1,7 +1,5 @@
 import os
-
 from flask import Flask, render_template, request, jsonify
-import psycopg2
 import pandas as pd
 from baseDatos import pruebaHuellaDf, credenciales, datosConsolidados
 import openpyxl
